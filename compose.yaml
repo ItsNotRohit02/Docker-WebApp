@@ -9,12 +9,12 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root-password
 
-  memcache:
+  mcache:
     image: memcached
     ports:
       - "11211:11211"
 
-  rabbitmq:
+  rmq:
     image: rabbitmq
     ports:
       - "15672:15672"
