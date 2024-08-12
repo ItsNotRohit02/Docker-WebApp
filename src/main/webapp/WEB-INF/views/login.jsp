@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login</title>
+    <title>LOGIN</title>
 
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
@@ -32,8 +32,7 @@
 </head>
 </head>
 
-<body background = "${contextPath}/resources/Images/login-background.png">
-    
+<body>
 <div class="mainbody container-fluid">
     <div class="row">
         <div class="navbar-wrapper">
@@ -45,19 +44,19 @@
                                 <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
                                     class="icon-bar"></span><span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="${contextPath}/index">Company Name Here</a>
-                            <i class="brand_network"><small><small>Brand Name Here</small></small></i>
+                            <a class="navbar-brand" href="${contextPath}/index">VISUAL PATH</a>
+                            <i class="brand_network"><small><small>VProfile</small></small></i>
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="#">Technologies</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">TECHNOLOGIES</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">BLOG</a></li>
                             </ul>
                             <div class="navbar-collapse navbar-right collapse">
 	                            <ul class="nav navbar-nav">
-	                        	 <li><a href="${contextPath}/login">Login</a></li>
-	                        	 <li><a href="${contextPath}/registration">Sign Up</a></li>
+	                        	 <li><a href="${contextPath}/login">LOGIN</a></li>
+	                        	 <li><a href="${contextPath}/registration">SIGN UP</a></li>
 	                       	 	</ul>
                             </div>
                             
@@ -81,7 +80,7 @@
             <span>${error}</span>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
-            <button class="btn btn-custom-LOGIN btn-lg  btn-block" type="submit">Login</button>
+            <button class="btn btn-custom-LOGIN btn-lg  btn-block" type="submit">LOGIN</button>
             <h4 class="text-center"><a href="${contextPath}/registration">Create an account</a></h4>
         </div>
 

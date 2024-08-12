@@ -28,8 +28,8 @@
                             <a class="navbar-brand" href="#" style="margin-right:-8px; margin-top:-5px;">
                                 <img alt="Brand" src="${contextPath}/resources/Images/user/logo.png" width="30px" height="30px">
                             </a>
-                            <a class="navbar-brand" href="#">Company Name Here</a>
-                            <i class="brand_network"><small><small>Brand Network</small></small></i>
+                            <a class="navbar-brand" href="#">VisualPath</a>
+                            <i class="brand_network"><small><small>VP* Network</small></small></i>
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
@@ -59,7 +59,7 @@
                                                     <div class="col-md-7">
                                                         <span> ${pageContext.request.userPrincipal.name}</span> <br/>
                                                         <p class="text-muted small">
-                                                            ${pageContext.request.userPrincipal.name}@company.co.in</p>
+                                                            ${pageContext.request.userPrincipal.name}@visualpath.co.in</p>
                                                         <div class="divider">
                                                         </div>
                                                         <a href="${contextPath}/user/${pageContext.request.userPrincipal.name}" class="btn btn-default btn-xs"><i class="fa fa-user-o" aria-hidden="true"></i> UpdateProfile </a>
@@ -101,16 +101,16 @@
                         <div class="media-body">
                             <hr>
                             <h3><strong>Bio</strong></h3>
-                            <p>Ut debitis autem est cumque quos eum repellat ipsa sed sapiente debitis ea mollitia impedit est dolorem consectetur qui rerum reiciendis. Eos excepturi blanditiis quo odio similique qui galisum quam. Et quia dolor vel consequuntur magni hic ratione commodi eum impedit nemo. Est internos quia sed accusantium ipsum nam magni distinctio in asperiores saepe eos tempore consequatur et dignissimos nihil 33 deserunt consequatur.</p>
+                            <p>DevOps For Product Management and Strategy of Application Delivery at VisualPath Technologies. Responsible of providing customers with counsel on their DevOps strategies to help them deliver higher quality software and services to market faster.</p>
                             <hr>
                             <h3><strong>Location</strong></h3>
-                            <p>Marathalli, Bangalore, India</p>
+                            <p>Earth</p>
                             <hr>
                             <h3><strong>Gender</strong></h3>
-                            <p>Male</p>
+                            <p>Unknown</p>
                             <hr>
                             <h3><strong>Birthday</strong></h3>
-                            <p>December 23 2002</p>
+                            <p>January 01 1901</p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <span>
-                        <h1 class="panel-title pull-left" style="font-size:30px;">${pageContext.request.userPrincipal.name} &nbsp; <small>${pageContext.request.userPrincipal.name}@company.co.in</small> <i class="fa fa-check text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title=" sharing with you"></i></h1>
+                        <h1 class="panel-title pull-left" style="font-size:30px;">${pageContext.request.userPrincipal.name} &nbsp; <small>${pageContext.request.userPrincipal.name}@visualpath.co.in</small> <i class="fa fa-check text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title=" sharing with you"></i></h1>
                         <div class="dropdown pull-right">
 						
                             <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -128,7 +128,7 @@
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Family</a></li>
+                                <li><a href="#">Familly</a></li>
                                 <li><a href="#"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Friends</a></li>
                                 <li><a href="#">Work</a></li>
                                 <li role="separator" class="divider"></li>
@@ -137,7 +137,7 @@
                         </div>
                     </span>
                     <br><br>
-                    <i class="fa fa-tags" aria-hidden="true"></i> <a href="#" class="tag">#HashTag1</a> <a href="#" class="tag"> #HashTag2</a> <a href="#" class="tag"> #HashTag3 </a><a href="#" class="tag"> #HashTag4</a>
+                    <i class="fa fa-tags" aria-hidden="true"></i> <a href="#" class="tag">#DevOps</a> <a href="#" class="tag"> #Continuous Integration</a> <a href="#" class="tag"> #Continuous Delivery </a><a href="#" class="tag"> #Automation</a>
                      <c:if test="${pageContext.request.userPrincipal.name =='admin_vp'}">
 					     <a href="${contextPath}/users" class="btn btn-success" >All Users</a>
 					 </c:if>
@@ -190,8 +190,8 @@
                     </span>
                     <hr>
                     <div class="post-content">
-                        <p>Qui doloribus dolor et error nulla</p>
-                        <p>Ut voluptatem neque sed recusandae beatae ut fugit doloremque ex doloribus consectetur est ratione galisum est praesentium atque sed eius quas. Et fuga quaerat aut adipisci alias in fugiat amet quo consectetur accusamus est maxime consectetur in odio expedita et totam dignissimos.</p>
+                        <p>"The Key to DevOps Success."</p>
+                        <p>The Key to DevOps Success" Collaboration". Collaboration is essential to DevOps,yet how to do it is often unclear with many teams falling back on ineffective conference calls, instant messaging, documents, and SharePoint sites. In this keynote,we will share a vision for a next generation DevOps where collaboration, continuous documentation, and knowledge capture are combined with automation toolchains to enable rapid innovation and deployment.</p>
                     </div>
                     <hr>
                     <div>
@@ -226,7 +226,7 @@
                             <img class="media-object img-circle" src="${contextPath}/resources/Images/user/user.png" width="50px" height="50px" style="margin-right:8px; margin-top:-5px;">
                         </a>
                     </div>
-                    <h4><a href="#" style="text-decoration:none;"><strong>${pageContext.request.userPrincipal.name}</strong></a><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 45 minutes ago</i></a></small></small></h4>
+                    <h4><a href="#" style="text-decoration:none;"><strong>${pageContext.request.userPrincipal.name}</strong></a><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 42 minutes ago</i></a></small></small></h4>
                     <span>
                         <div class="navbar-right">
                             <div class="dropdown">
@@ -254,14 +254,14 @@
                                         <img class="media-object img-circle" src="${contextPath}/resources/Images/user/user2.png" width="50px" height="50px" style="margin-right:8px; margin-top:-5px;">
                                     </a>
                                 </div>
-                                <h4><a href="#" style="text-decoration:none;"><strong>New User</strong></a> <small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> about 10 hours ago</i></a></small></small></h4>
+                                <h4><a href="#" style="text-decoration:none;"><strong>Waheed Khan</strong></a> <small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> about 10 hours ago</i></a></small></small></h4>
                                 <hr>
                                 <div class="post-content">
-                                <p>In architecto internos et voluptates tempora in alias odit. Sed vero illo sit unde asperiores aut deleniti illum.</p>
-                                <p>Lorem ipsum dolor sit amet. Et dolorem dignissimos non deleniti omnis qui quos commodi sit illo saepe eum ullam animi et natus earum et assumenda laboriosam. Sed esse amet et nesciunt magnam sed magni quas qui alias dignissimos ea quidem voluptas. Est similique facilis et nisi consectetur ut exercitationem impedit in totam neque sed minus quia et deleniti excepturi. Qui sint dicta et nihil consequatur vel delectus quos sed maxime quidem sed dicta ipsam aut distinctio nisi.</p>
-                                <p>Lorem ipsum dolor sit amet. Et dolorem dignissimos non deleniti omnis qui quos commodi sit illo saepe eum ullam animi et natus earum et assumenda laboriosam. Sed esse amet et nesciunt magnam sed magni quas qui alias dignissimos ea quidem voluptas. Est similique facilis et nisi consectetur ut exercitationem impedit in totam neque sed minus quia et deleniti excepturi. Qui sint dicta et nihil consequatur vel delectus quos sed maxime quidem sed dicta ipsam aut distinctio nisi.</p>
-                                <p>Lorem ipsum dolor sit amet. Et dolorem dignissimos non deleniti omnis qui quos commodi sit illo saepe eum ullam animi et natus earum et assumenda laboriosam. Sed esse amet et nesciunt magnam sed magni quas qui alias dignissimos ea quidem voluptas. Est similique facilis et nisi consectetur ut exercitationem impedit in totam neque sed minus quia et deleniti excepturi. Qui sint dicta et nihil consequatur vel delectus quos sed maxime quidem sed dicta ipsam aut distinctio nisi.</p>
-                                <p>Lorem ipsum dolor sit amet. Et dolorem dignissimos non deleniti omnis qui quos commodi sit illo saepe eum ullam animi et natus earum et assumenda laboriosam. Sed esse amet et nesciunt magnam sed magni quas qui alias dignissimos ea quidem voluptas. Est similique facilis et nisi consectetur ut exercitationem impedit in totam neque sed minus quia et deleniti excepturi. Qui sint dicta et nihil consequatur vel delectus quos sed maxime quidem sed dicta ipsam aut distinctio nisi.</p>
+                                     <p>What are DevOps skills?</p>
+                                    <p>Our respondents identified the top three skill areas for DevOps staff:</p>
+                                    <p>1) Coding or scripting 2)Process re-engineering 3)Communicating and collaborating with others Extensive knowledge of software build cycles 4)Experience deploying code 5)Experience in software architecture 6)Familiarity with application programming 7)Database management 8)System design.</p>
+									<p>These skills all point to a growing recognition that software is not written in the old way anymore. Where software used to be written from scratch in a highly complex and lengthy process, creating new products is now often a matter of choosing open source components and stitching them together with code. The complexity of todays software lies less in the authoring, and more in ensuring that the new software will work across a diverse set of operating systems and platforms right away. Likewise, testing and deployment are now done much more frequently. That is, they can be more frequent,if developers communicate early and regularly with the operations team, and if ops people bring their knowledge of the production environment to design of testing and staging environments.</p>                                
+                                    <p>Demand for people with DevOps skills is growing rapidly because businesses get great results from DevOps. Organizations using DevOps practices are overwhelmingly high-functioning: They deploy code up to 30 times more frequently than their competitors.</p>
                                 </div>
                             </div>
                         </div>
@@ -299,7 +299,7 @@
                             <img class="media-object img-circle" src="${contextPath}/resources/Images/user/user.png" width="50px" height="50px" style="margin-right:8px; margin-top:-5px;">
                         </a>
                     </div>
-                    <h4><a href="#" style="text-decoration:none;"><strong>${pageContext.request.userPrincipal.name}</strong></a><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 47 minutes ago</i></a></small></small></h4>
+                    <h4><a href="#" style="text-decoration:none;"><strong>${pageContext.request.userPrincipal.name}</strong></a><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 42 minutes ago</i></a></small></small></h4>
                     <span>
                         <div class="navbar-right">
                             <div class="dropdown">
@@ -320,9 +320,9 @@
                     </span>
                     <hr>
                     <div class="post-content">
-                        <p>"Lorem ipsum dolor sit amet"</p>
+                        <p>" Manager Reaction On Your Work without DevOps "</p>
                         <img class="img-responsive" src="${contextPath}/resources/Images/user/giphy.gif">
-                        <p><br><a href="#" class="tag">#Lorem_ipsum</a> <a href="#" class="tag"># dolor_sit_amet</a></p>
+                        <p><br><a href="#" class="tag">#  I want DevOps </a> <a href="#" class="tag">#  DevOps..</a></p>
                     </div>
                     <hr>
                     <div>
@@ -357,7 +357,7 @@
                             <img class="media-object img-circle" src="${contextPath}/resources/Images/user/user.png" width="50px" height="50px" style="margin-right:8px; margin-top:-5px;">
                         </a>
                     </div>
-                    <h4><a href="#" style="text-decoration:none;"><strong>${pageContext.request.userPrincipal.name}</strong></a> <small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 48 minutes ago</i></a></small></small></h4>
+                    <h4><a href="#" style="text-decoration:none;"><strong>${pageContext.request.userPrincipal.name}</strong></a> <small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 42 minutes ago</i></a></small></small></h4>
                     <span>
                         <div class="navbar-right">
                             <div class="dropdown">
@@ -378,7 +378,7 @@
                     </span>
                     <hr>
                     <div class="post-content">
-                        <p>"Lorem ipsum dolor sit amet"</p>
+                        <p>"Feeling Happy to be a DevOps."</p>
                     </div>
                     <hr>
                     <div>
@@ -403,10 +403,10 @@
                                             <img class="media-object img-circle" src="${contextPath}/resources/Images/user/user2.png" width="35px" height="35px" style="margin-right:8px; margin-top:-5px;">
                                         </a>
                                     </div>
-                                    <h4><a href="#" style="text-decoration:none;"><strong>Newest User</strong></a></h4>
+                                    <h4><a href="#" style="text-decoration:none;"><strong>Kiran Kumar</strong></a></h4>
                                     <hr>
                                     <div class="post-content">
-                                        <p>Non dolorum vitae ut enim galisum ex excepturi dolore. Est debitis earum sit veniam unde est nemo voluptatem cum voluptatum laborum est asperiores impedit. Et maiores tempore sit aperiam facilis non aliquid quibusdam qui facilis laboriosam.</p>
+                                        <p>DevOps has significant importance to any company delivering software or technical services today.Defining DevOps is trickier than you would think, primarily because of its wide usage. It is essentially shorthand, and nothing more than that, for a lean approach to software delivery.</p>
                                         <br><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 12 minutes ago</i></a></small></small>
                                     </div>
                                 </div>
@@ -421,10 +421,10 @@
                                             <img class="media-object img-circle" src="${contextPath}/resources/Images/user/user3.png" width="35px" height="35px" style="margin-right:8px; margin-top:-5px;">
                                         </a>
                                     </div>
-                                    <h4><a href="#" style="text-decoration:none;"><strong>Newer User</strong></a></h4>
+                                    <h4><a href="#" style="text-decoration:none;"><strong>Mi Chleen</strong></a></h4>
                                     <hr>
                                     <div class="post-content">
-                                        <p>Lorem ipsum dolor sit amet. In illum vero ad dolor sint in explicabo inventore est reprehenderit dolor? Non voluptatem sequi est eveniet deleniti ea doloribus illo est possimus harum.</p>
+                                        <p>The secret to DevOps maturity is not technology or process, but people. It takes engaged leadership and all for one cooperation to achieve the kind of results that lead companies to superior IT performance. High-performing DevOps teams can recover 168 times faster from failures and have 60 times fewer failures due to changes, according to the 2015 State of DevOps Report by Puppet Labs. High-performing teams also release code at significantly increasing velocity as their teams grow in size, approaching three deploys per day per developer, for teams of around 1000 developers.</p>
                                         <br><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 9 minutes ago</i></a></small></small>
                                     </div>
                                 </div>
@@ -442,7 +442,7 @@
                                     <h4><a href="#" style="text-decoration:none;"><strong>${pageContext.request.userPrincipal.name}</strong></a></h4>
                                     <hr>
                                     <div class="post-content">
-                                        <p>Lorem ipsum dolor sit amet. In illum vero ad dolor sint in explicabo inventore est reprehenderit dolor? Non voluptatem sequi est eveniet deleniti ea doloribus illo est possimus harum.</p>
+                                        <p>At a time when the speed of application development is vital to commercial success, the DevOps methodology based on communication, collaboration, integration and automation has become one of the biggest IT moves around. However, it is more than just a business philosophy;to do it right requires genuine infrastructure investment and development.</p>
                                         <br><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> 2 minutes ago</i></a></small></small>
                                     </div>
                                 </div>
