@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  db:
+    image: vprocontainers/vprofiledb
+    ports:
+      - "3306:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root-password
+
+  memcache:
+    image: memcached
+    ports:
+      - "11211:11211"
+
+  rabbitmq:
+    image: rabbitmq
+    ports:
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+
+  app:
+    image: vprocontainers/vprofileapp
+    ports:
+      - "8080:8080"
+    volumes: 
+      - vproappdata:/usr/local/tomcat/webapps
+
+  web:
+    image: vprocontainers/vprofileweb
+    ports:
+      - "80:80"
+      
+volumes:
+  dbdata: {}
+  vproappdata: {}
