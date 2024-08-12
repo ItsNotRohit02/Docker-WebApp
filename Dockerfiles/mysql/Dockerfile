@@ -3,7 +3,7 @@ FROM mysql:8.0.33
 LABEL "Project"="Docker-WebApp"
 LABEL "Author"="ItsNotRohit02"
 
-ENV MYSQL_ROOT_PASSWORD="vprodbpass"
+ENV MYSQL_ROOT_PASSWORD="root-password"
 ENV MYSQL_DATABASE="accounts"
 
 
