@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SIGNUP</title>
+    <title>Sign Up</title>
 
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
@@ -41,19 +41,19 @@
                                 <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
                                     class="icon-bar"></span><span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="${contextPath}/index" >VISUAL PATH</a>
-                            <i class="brand_network"><small><small>VProfile</small></small></i>
+                            <a class="navbar-brand" href="${contextPath}/index" >Company Name Here</a>
+                            <i class="brand_network"><small><small>Brand Name Here</small></small></i>
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="#">TECHNOLOGIES</a></li>
-                                <li><a href="#">ABOUT</a></li>
-                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">Technologies</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
                             </ul>
                             <div class="navbar-collapse navbar-right collapse">
 	                            <ul class="nav navbar-nav">
-	                        	 <li><a href="${contextPath}/login">LOGIN</a></li>
-	                        	 <li><a href="${contextPath}/registration">SIGN UP</a></li>
+	                        	 <li><a href="${contextPath}/login">Login</a></li>
+	                        	 <li><a href="${contextPath}/registration">Sign Up</a></li>
 	                       	 	</ul>
                             </div>
                             
@@ -69,7 +69,7 @@
 <div class="container">
 
     <form:form method="POST" modelAttribute="userForm" class="form-signin">
-        <h2 class="form-signin-heading" align="center">SIGN UP</h2>
+        <h2 class="form-signin-heading" align="center">Sign Up</h2>
         <img  class="logo" src="${contextPath}/resources/Images/visualpathlogo3.png" />
         <spring:bind path="username">
             <div class="form-group ${status.error ? 'has-error' : ''}">
@@ -101,7 +101,7 @@
             </div>
         </spring:bind>
 
-        <button class="btn btn-custom btn-lg  btn-block" type="submit">SIGN UP</button>
+        <button class="btn btn-custom btn-lg  btn-block" type="submit">Sign Up</button>
     </form:form>
 
 </div>
