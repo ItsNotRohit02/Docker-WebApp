@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   db:
-    image: vprocontainers/vprofiledb
+    image: itsnotrohit/docker-webapp-mysql
     ports:
       - "3306:3306"
     volumes:
@@ -23,17 +23,17 @@ services:
       - RABBITMQ_DEFAULT_PASS=guest
 
   app:
-    image: vprocontainers/vprofileapp
+    image: itsnotrohit/docker-webapp-tomcat
     ports:
       - "8080:8080"
     volumes: 
       - vproappdata:/usr/local/tomcat/webapps
 
   web:
-    image: vprocontainers/vprofileweb
+    image: itsnotrohit/docker-webapp-nginx
     ports:
       - "80:80"
-      
+
 volumes:
   dbdata: {}
   vproappdata: {}
