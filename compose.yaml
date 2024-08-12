@@ -27,7 +27,7 @@ services:
     ports:
       - "8080:8080"
     volumes: 
-      - vproappdata:/usr/local/tomcat/webapps
+      - appdata:/usr/local/tomcat/webapps
 
   web:
     image: itsnotrohit/docker-webapp-nginx
@@ -36,4 +36,4 @@ services:
 
 volumes:
   dbdata: {}
-  vproappdata: {}
+  appdata: {}
