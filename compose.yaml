@@ -1,6 +1,6 @@
 services:
   db:
-    image: itsnotrohit/docker-webapp-mysql
+    image: itsnotrohit/webapp-mysql
     ports:
       - "3306:3306"
     volumes:
@@ -22,14 +22,14 @@ services:
       - RABBITMQ_DEFAULT_PASS=guest
 
   app:
-    image: itsnotrohit/docker-webapp-tomcat
+    image: itsnotrohit/webapp-tomcat
     ports:
       - "8080:8080"
     volumes: 
       - appdata:/usr/local/tomcat/webapps
 
   web:
-    image: itsnotrohit/docker-webapp-nginx
+    image: itsnotrohit/webapp-nginx
     ports:
       - "80:80"
 
