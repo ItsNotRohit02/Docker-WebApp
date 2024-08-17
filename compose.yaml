@@ -7,11 +7,21 @@ services:
       - dbdata:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root-password
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
 
   mcache:
     image: memcached
     ports:
       - "11211:11211"
+    healthcheck:
+      test: ["CMD", "echo", "stats", "|", "nc", "localhost", "11211"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
 
   rmq:
     image: rabbitmq
@@ -21,6 +31,11 @@ services:
     environment:
       - RABBITMQ_DEFAULT_USER=guest
       - RABBITMQ_DEFAULT_PASS=guest
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
 
   app:
     image: itsnotrohit/webapp-tomcat
@@ -28,11 +43,21 @@ services:
       - "8080:8080"
     volumes: 
       - appdata:/usr/local/tomcat/webapps
+    depends_on:
+      db:
+        condition: service_healthy
+      mcache:
+        condition: service_healthy
+      rmq:
+        condition: service_healthy
 
   web:
     image: itsnotrohit/webapp-nginx
     ports:
       - "80:80"
+    depends_on:
+      app:
+        condition: service_started
 
 volumes:
   dbdata: {}
