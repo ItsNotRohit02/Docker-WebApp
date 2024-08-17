@@ -1,5 +1,5 @@
 FROM openjdk:8 AS build_image
-RUN apt update && apt install maven -y
+RUN apt update && apt install git -y && apt install maven -y
 RUN git clone https://github.com/ItsNotRohit02/Docker-WebApp.git
 RUN cd Docker-WebApp && mvn install
 
